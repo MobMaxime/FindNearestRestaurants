@@ -5,11 +5,12 @@ import { Provider } from 'react-redux'
 import RootContainer from './RootContainer'
 import createStore from '../Redux'
 
+console.disableYellowBox = true;
 // create our store
 const store = createStore()
 
 /**
- * Provides an entry point into our application.  Both index.ios.js and index.android.js
+ * Provides an entry point into our application.  index.js
  * call this component first.
  *
  * We create our Redux store here, put it into a provider and then bring in our
@@ -18,6 +19,7 @@ const store = createStore()
  * We separate like this to play nice with React Native's hot reloading.
  */
 class App extends Component {
+  
   render () {
     return (
       <Provider store={store}>

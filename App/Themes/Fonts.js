@@ -1,3 +1,4 @@
+import {Platform} from 'react-native';
 const type = {
   base: 'Avenir-Book',
   bold: 'Avenir-Black',
@@ -52,9 +53,21 @@ const style = {
     fontSize: size.medium
   }
 }
-
+const  Fonts ={
+  
+  OpenSansBold : Platform.OS === 'ios' ? 'OpenSans-Bold' : 'OpenSansBold',
+  OpenSansBoldItalic : Platform.OS === 'ios' ? 'OpenSans-BoldItalic' : 'OpenSansBoldItalic',
+  OpenSansLight : Platform.OS === 'ios' ? 'OpenSans-Light' : 'OpenSansLight',
+  SourceSansBold : Platform.OS === 'ios' ? 'SourceSansPro-Bold' : 'SourceSansProBold',
+  SourceSansReg : Platform.OS === 'ios' ? 'SourceSansPro-Regular' : 'SourceSansProRegular',
+  RalewayBold : Platform.OS === 'ios' ? 'Raleway-Bold' : 'RalewayBold',
+  RalewayMedium : Platform.OS === 'ios' ? 'Raleway-Medium' : 'RalewayMedium',
+  // AllerBold : Platform.OS === 'ios' ? 'Aller_Bd' : 'AllerBd',
+  // AllerReg : Platform.OS === 'ios' ? 'Aller_Rg' : 'AllerRg',
+}
 export default {
   type,
   size,
-  style
+  style,
+  Fonts,
 }

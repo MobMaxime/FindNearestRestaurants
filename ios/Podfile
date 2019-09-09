@@ -1,0 +1,36 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'POC' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  #use_frameworks!
+
+  # Pods for POC
+  pod 'react-native-geolocation', :path => '../node_modules/@react-native-community/geolocation'
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+  'Core',
+  'CxxBridge',
+  'RCTAnimation',
+  'RCTImage',
+  'RCTText',
+  'RCTWebSocket', # needed for debugging
+  'RCTLinkingIOS',
+  'ART',
+  'RCTPushNotification',
+  'RCTActionSheet',
+  'RCTGeolocation'
+]
+pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/GLog.podspec'
+  
+end
+
+target 'POC-tvOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for POC-tvOS
+
+end
