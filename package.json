@@ -29,7 +29,7 @@
     "format-json": "^1.0.3",
     "identity-obj-proxy": "^3.0.0",
     "jetifier": "^1.6.4",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "prop-types": "^15.7.2",
     "querystringify": "2.1.0",
     "ramda": "^0.26.1",
